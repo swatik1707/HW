@@ -10,5 +10,13 @@
 #   Студенту надо попросить ХХХ.ХХ рублей
 
 educational_grant, expenses = 10000, 12000
+lack_of_cash = abs(educational_grant - expenses)
+needed_money = lack_of_cash
+inflation = 1.03
+i = 1
+while i < 10:
+    needed_money += lack_of_cash*inflation**i
+    i+=1
+print("Маааааааам, мне надо %s, чтобы прожить до конца года!" %needed_money)
 
-# TODO здесь ваш код
+
