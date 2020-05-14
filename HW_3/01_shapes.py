@@ -33,6 +33,9 @@ point_6angle = sd.get_point(400, 50)
 point_5angle = sd.get_point(400, 300)
 
 def optiangle(angle_count, point, angle, length, step):
+    if angle_count == 1:
+        length = length+0
+        angle = angle+2
     if angle_count < 1:
         return
     v1 = sd.get_vector(start_point=point, angle=angle, length = length, width=3)
