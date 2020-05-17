@@ -26,7 +26,7 @@ import simple_draw as sd
 # Возможный результат решения см lesson_004/results/exercise_04_fractal_01.jpg
 
 # можно поиграть -шрифтами- цветами и углами отклонения
-root_point = sd.get_point(500, 90)
+root_point = sd.get_point(300, 20)
 
 def draw_branches(root_point,angle,length,step):
     if length < .5:
@@ -49,7 +49,7 @@ def draw_branches(root_point,angle,length,step):
     # draw_branches(v_branch2.end_point, (v_branch2.angle - sd.random_number(18, 43)), (v_branch2.length * (sd.random_number(6,10)*0.1)))
 
 for delta in range(-70, 71, sd.random_number(5,15)):
-    draw_branches(root_point,90,150,step=delta)
+    draw_branches(root_point,90,90,step=delta)
 
 
 
