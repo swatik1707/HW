@@ -1,4 +1,4 @@
-max_num = 2**14
+max_num = 2**13
 prime_list = []
 for i in range(2,max_num):
     k = 0
