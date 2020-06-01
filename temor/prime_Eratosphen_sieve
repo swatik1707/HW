@@ -1,0 +1,8 @@
+from math import sqrt
+from math import floor
+base_number = 2 ** 26
+prime_list = [2, 3, 5, 7, 11] + [i for i in range(2, n) if
+                                 i % 2 != 0 and i % 3 != 0 and i % 5 != 0 and i % 7 != 0 and i % 11 != 0 and i%17!=0 and i%19!=0 and i%23!=0]
+print('Array length = ', len(prime_list))
+print('Base number is = ', base_number)
+
